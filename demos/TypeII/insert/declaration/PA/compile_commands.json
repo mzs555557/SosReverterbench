@@ -1,0 +1,12 @@
+[
+    {
+        "command": "cc -c -g -O0 -DNDEBUG -o test.o test.c", 
+        "directory": "/FixMorph/Sosexperiments/TypeII/insert/declaration/PA", 
+        "file": "/FixMorph/Sosexperiments/TypeII/insert/declaration/PA/test.c"
+    }, 
+    {
+        "command": "cc -c -o test.o test.c", 
+        "directory": "/FixMorph/Sosexperiments/TypeII/insert/declaration/PA", 
+        "file": "/FixMorph/Sosexperiments/TypeII/insert/declaration/PA/test.c"
+    }
+]

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#define NULL 2
+
+int fib_n(int num,   int m, int random)
+{
+	if (num == 0 || num == 1)
+	{
+		return num;
+	}
+	return fib_n(num - 1 , random,  m ) + fib_n(num - 2  , random,  m );
+}
+
+

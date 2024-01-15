@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Author {
+  char name[50];
+  int user_id;
+  int rank;
+} author;
+
+int sort(struct Author author_list[], int length) {
+  int a, b, minimum, position, author_id, rank;
+  struct Author selected;
+  a = 0;
+
+  while (a < length) {
+    author_id = author_list[a].user_id;
+    rank = author_list[a].rank;
+    minimum = rank;
+    position = a;
+    for (b = a + 1; b < length; b++) {
+      if (author_list[b].rank < minimum) {
+        minimum = author_list[b].rank;
+        position = b;
+      }
+    }
+
+    selected = author_list[a];
+    author_list[a] = author_list[position];
+    author_list[position] = selected;
+    a++;
+  }
+
+  return 1;
+}
+

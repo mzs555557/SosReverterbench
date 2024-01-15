@@ -1,0 +1,15 @@
+#include <stdio.h>
+#define NULL 2
+
+
+
+int main(void)
+{
+	int k,b,  p=1 ;
+	scanf("%d", &k);
+	
+	int fn2 = fib_n(k , p,  b );
+ int fib_number2 = fib(a , NULL , c); 
+
+	return 0;
+}

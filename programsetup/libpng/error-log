@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "Sosreverter.py", line 4, in <module>
+    main.main()
+  File "/FixMorph/sosreverter/main.py", line 142, in main
+    logger.store()
+  File "/FixMorph/sosreverter/tools/logger.py", line 117, in store
+    copyfile(definitions.FILE_MAKE_LOG, definitions.DIRECTORY_LOG + "/log-make")
+  File "/usr/lib/python3.7/shutil.py", line 120, in copyfile
+    with open(src, 'rb') as fsrc:
+FileNotFoundError: [Errno 2] No such file or directory: '/FixMorph/logs/log-make'

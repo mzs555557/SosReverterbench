@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+
+
+
+int main(void)
+{
+	int a,b;
+	scanf("%d", &a);
+	scanf("%d", &b);
+	int vul_num = vulcode(a,b);
+    a = 0;
+	for (; a < vul_num; a++){
+	    printf("fib number is %d", vul_num);
+	}
+	return 0;
+}
+
+

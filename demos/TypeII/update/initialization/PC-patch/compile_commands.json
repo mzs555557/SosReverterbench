@@ -1,0 +1,7 @@
+[
+    {
+        "command": "cc -c -g -O0 -DNDEBUG -fsanitize= -o test.o test.c", 
+        "directory": "/FixMorph/Sosexperiments/TypeII/update/initialization/PC-patch", 
+        "file": "/FixMorph/Sosexperiments/TypeII/update/initialization/PC-patch/test.c"
+    }
+]

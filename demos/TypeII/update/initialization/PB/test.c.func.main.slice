@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    int array[5];
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    // 错误示例：未正确初始化数组
+    // 没有为数组元素赋初值，可能导致未定义行为
+    if (array[num] == 0) {
+        printf("Array element is zero.\n");
+    } else {
+        printf("Array element is non-zero.\n");
+    }
+
+    return 0;
+}

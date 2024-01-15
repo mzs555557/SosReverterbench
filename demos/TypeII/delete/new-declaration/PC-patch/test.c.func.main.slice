@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+
+
+int main(void)
+{
+	int a,b;
+	scanf("%d", &a);
+	scanf("%d", &b);
+	int fib_number = vulcode(a,b);
+	printf("fib number is %d", fib_number);
+	return 0;
+}

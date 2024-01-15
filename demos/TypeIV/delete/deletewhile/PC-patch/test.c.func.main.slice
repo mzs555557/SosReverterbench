@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int a,b, c = 20;, &a);
+	scanf("%d", &b);
+    int vul_numver = vulcode(a,b);
+	return 0;
+
+ c = a + b -c; 
+}

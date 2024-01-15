@@ -1,0 +1,12 @@
+[
+    {
+        "command": "cc -c -g -O0 -DNDEBUG -o test.o test.c", 
+        "directory": "/FixMorph/Sosexperiments/TypeIII/add/addfunc/PB", 
+        "file": "/FixMorph/Sosexperiments/TypeIII/add/addfunc/PB/test.c"
+    }, 
+    {
+        "command": "cc -c -o test.o test.c", 
+        "directory": "/FixMorph/Sosexperiments/TypeIII/add/addfunc/PB", 
+        "file": "/FixMorph/Sosexperiments/TypeIII/add/addfunc/PB/test.c"
+    }
+]

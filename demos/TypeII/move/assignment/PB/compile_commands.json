@@ -1,0 +1,12 @@
+[
+    {
+        "command": "cc -c -g -O0 -DNDEBUG -o test.o test.c", 
+        "directory": "/FixMorph/Sosexperiments/TypeII/move/assignment/PB", 
+        "file": "/FixMorph/Sosexperiments/TypeII/move/assignment/PB/test.c"
+    }, 
+    {
+        "command": "cc -c -o test.o test.c", 
+        "directory": "/FixMorph/Sosexperiments/TypeII/move/assignment/PB", 
+        "file": "/FixMorph/Sosexperiments/TypeII/move/assignment/PB/test.c"
+    }
+]

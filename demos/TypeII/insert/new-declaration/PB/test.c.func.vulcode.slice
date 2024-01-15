@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int vulcode(int n, int m)
+{
+	int k = 0;
+	int a =5, b =4;
+
+	return a * n + m *b;
+}
+
+
+
+
