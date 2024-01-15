@@ -1,0 +1,4 @@
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text
+NVDCVE/CVE/*.json filter=lfs diff=lfs merge=lfs -text
+NVDCVE/CVEdataset/*.json filter=lfs diff=lfs merge=lfs -text
