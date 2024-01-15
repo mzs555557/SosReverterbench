@@ -50,15 +50,14 @@ next step is run SosReverter with experiment configuration:
 ```
 python3.7 Sosreverter.py --conf=/data/backport/libtiff-cve/28/reverter.conf
 ```
-<video src="./img/cve20220909.mp4" autoplay="true" controls="controls" width="800" height="600">
-</video>
+![Alt Text](./img/cve20220909.gif)
+
 
 #### cve-2022-1122
 ```
 python3.7 Sosreverter.py --conf=/data/backport/openjpeg-cve/1/reverter.conf
 ```
-<video src="./img/cve20221122.mp4" autoplay="true" controls="controls" width="800" height="600">
-</video>
+![Alt Text](./img/cve20221122.gif)
 
 ### benchprograms.tar.gz
 
