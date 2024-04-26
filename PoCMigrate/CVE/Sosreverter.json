@@ -1,0 +1,204 @@
+[
+    {
+        "cve-id": "CVE-2023-30775",
+        "fixcommit": "cfbb883bf6ea7bedcb04177cc4e52d304522fdff",
+        "fixparent": "e813112545942107551433d61afd16ac094ff246",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "write":"Y",
+        "command":"./tiffcrop -i poc /dev/null",
+        "poc":"wget https://gitlab.com/libtiff/libtiff/uploads/2dd8da390f1a47947a470328a6cac860/tiffcrop_heap_overflow_extractContigSamples32bits"
+      },
+    {
+        "cve-id": "CVE-2023-2731",
+        "fixcommit": "9be22b639ea69e102d3847dca4c53ef025e9527b",
+        "fixparent":"9bd48f0dbd64fb94dc2b5b05238fde0bfdd4ff3f",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "write":"Y",
+        "command":"./tiffcp -i poc /dev/null",
+        "poc":"wget https://gitlab.com/libtiff/libtiff/uploads/92e334efa48e9ff4d4c55f25c3d189aa/poc_file"
+    },
+    {
+        
+        "cve-id": "CVE-2022-34526", 
+        "fixcommit": "5e60251ea80fd119f631c73d09adf7de6c7f96fc",
+        "fixparent":"b2d6198417e9e3187720064d536c5b970b5e7255",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "write":"Y",
+        "success":"Y",
+        "command":"./tiffsplit  poc",
+        "poc":"wget https://github.com/Marsman1996/pocs/blob/master/libtiff/poc-tiffsplit-b2d61984-_TIFFVGetField-stackoverflow?raw=true"
+    },
+    {
+        "cve-id": "CVE-2022-22844", 
+        "fixcommit": "03047a26952a82daaa0792957ce211e0aa51bc64",
+        "fixparent":"707178a7e1a4d361ffd5f2b4cfdfc2bc10c19712",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "write":"Y",
+        "success":"Y",
+        "command":"tiffset -s 93 helloworld ./poc",
+        "poc":"wget https://gitlab.com/libtiff/libtiff/uploads/1f564305b8c7309e135d3ff579604990/tiffset_poc"
+    },
+    {
+        "cve-id": "CVE-2022-0865",
+        "fixcommit": "a1c933dabd0e1c54a412f3f84ae0aa58115c6067",
+        "fixparent":"4ab6a5e651ddda90a47fdc9c9393846543a5743d",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "success":"N",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "write":"Y",
+        "command":"tiffcp poc /tmp/foo",
+        "poc":"wget https://gitlab.com/libtiff/libtiff/uploads/20b50fc5b7f7535d1a45bcc0558d38e2/poc"
+    },
+    {
+
+        "cve-id": "CVE-2018-18661",
+        "fixcommit": "99b10edde9a0fc28cc0e7b7757aa18ac4c8c225f",
+        "fixparent":"67b755b3341a90135ea72e5da0a7078c8a8c40ae",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "write":"Y",
+        "command":"./tiff2bw poc /dev/null",
+        "poc":"wget http://bugzilla.maptools.org/attachment.cgi?id=872"
+    },
+    {
+        
+        "cve-id": "CVE-2018-8905",
+        "fixcommit": "58a898cb4459055bb488ca815c23b880c242a27d",
+        "fixparent":"b68fc85f398227fe59798e0eb4168effeb9e6bf4",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "write":"Y",
+        "command":"tiffcp -i $FILE /tmp/foo",
+        "poc":"wget http://bugzilla.maptools.org/attachment.cgi?id=872"
+    },
+    {
+        
+        "cve-id": "CVE-2018-7456",
+        "fixcommit": "be4c85b16e8801a16eec25e80eb9f3dd6a96731b",
+        "fixparent":"33f1b16788b86d4501f82678090d209364b3ca49",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "write":"Y",
+        "command":"tiffinfo -c $FILE",
+        "poc":"wget https://github.com/xiaoqx/pocs/raw/master/libtiff/1-tiffinfo-c-null"
+    },
+    {
+        
+        "cve-id": "CVE-2018-18557",
+        "fixcommit": "681748ec2f5ce88da5f9fa6831e1653e46af8a66",
+        "fixparent":"d438fab328c0e6180f27610df532340a73694023",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "write":"Y",
+        "command":"tiffcp -i $FILE /tmp/foo",
+        "poc":"wget https://github.com/Hack-Me/Pocs_for_Multi_Versions/raw/main/CVE-2018-18557/CVE-2018-18557_v4.0.8"
+    },
+    {
+        
+        "cve-id":"CVE-2019-7663",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "fixcommit":"802d3cbf3043be5dce5317e140ccb1c17a6a2d39",
+        "fixparent":"a0e273fdca741b8805e19deeb8019fa42c4e64ba",
+        "targetcommit":"0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "write":"Y",
+        "command":"tiffcp -i crash /tmp/foo",
+        "poc":"wget http://bugzilla.maptools.org/attachment.cgi?id=887"
+    }
+    ,
+    {
+        
+      "cve-id": "CVE-2022-0561",
+      "fixcommit": "eecb0712f4c3a5b449f70c57988260a667ddbdef",
+      "fixparent":"561599c99f987dc32ae110370cfdd7df7975586b",
+      "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+      "write":"Y",
+      "project":"https://gitlab.com/libtiff/libtiff.git",
+      "command":"./tiffinfo -f lsb2msb -Dcdjrsz crash.tif",
+      "poc":"wget https://gitlab.com/libtiff/libtiff/uploads/b789f1156f127ee6edad8829e21a3209/crash.zip"
+    },
+    {
+        
+        "cve-id": "CVE-2022-0907",
+        "fixcommit": "40b00cfb32256d377608b4d4cd30fac338d0a0bc",
+        "fixparent":"5e18004500cda10d9074bdb6166b054e95b659ed",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "write":"Y",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "command":"tiffcrop -H 341 poc /tmp/foo",
+        "poc":"wget https://gitlab.com/libtiff/libtiff/uploads/916ba3a98410637196689ab0ebb11f45/poc"
+      },
+      {
+        
+        "cve-id": "CVE-2022-0924",
+        "fixcommit": "408976c44ef0aad975e0d1b6c6dc80d60f9dc665",
+        "fixparent":"6df920f8e747bbbf98e1f8bf1ec53b345f4e9d0e",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "write":"Y",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "command":"tiffcp -i -s -p separate poc /tmp/foo",
+        "poc":"wget https://gitlab.com/libtiff/libtiff/uploads/2cf74e773cfa548d7a1458570b2f3a8c/heap-buffer-overflow_tiffcp.c-1373"
+      },
+
+      {
+        
+        "cve-id": "CVE-2022-1355",
+        "fixcommit": "fb1db384959698edd6caeea84e28253d272a0f96",
+        "fixparent": "b51bb157123264e26d34c09cc673d213aea61fc7",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "write":"Y",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "command":"tiffcp  -8 -8 -8 -8 -8 -8 -8 -8 -8 -8 ./i ./i",
+        "success":"Y",
+        "poc":""
+      },
+      {
+        
+        "cve-id": "CVE-2022-1354",
+        "fixcommit": "87f580f39011109b3bb5f6eca13fac543a542798",
+        "fixparent":"8244c2d5fa590f4c6024d6aa60f8ccfa64b05f8a",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "write":"Y",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "command":"tiffinfo -D -i  -r ./poc ",
+        "poc":"https://gitlab.com/libtiff/libtiff/uploads/515cd78d282963cd58506166614bb7f7/poc.zip"
+      }
+      ,  
+    {
+        
+        "cve-id": "CVE-2022-1622&CVE-2022-1623",
+        "fixcommit": "b4e79bfa0c7d2d08f6f1e7ec38143fc8cb11394a",
+        "fixparent":"b51bb157123264e26d34c09cc673d213aea61fc7",
+        "targetcommit": "0c74f424b1c0e6451d2a5c83428ade77674de046",
+        "write":"Y",
+        "project":"https://gitlab.com/libtiff/libtiff.git",
+        "command":"tiffcp -i poc1 /tmp/foo",
+        "poc":"https://gitlab.com/libtiff/libtiff/uploads/e4ec6ecadc9c132ca14f7eb520571754/poc1"
+    },
+    {
+        
+        "cve-id": "CVE-2019-6129",
+        "fixcommit":"eb6767273a4eb5d6f4ad528370d7262cf7aa220c",
+        "fixparent":"9f734b13f4ea062af98652c4c7678f667d2d85c7",
+        "targetcommit":"d7f77bf271753016ab2f15936f0b20e0f831946e",
+        "project":"https://github.com/glennrp/libpng.git",
+        "write":"Y",
+        "command":"./pngcp  poc  /dev/null",
+        "poc":"wget https://github.com/glennrp/libpng/files/2729282/libpng_poc.zip"
+    },
+    {
+    
+        
+        "cve-id": "CVE-2022-2963",
+        "fixcommit": "d99636fad60629785efd1ef72da772a8ef68f54c",
+        "fixparent":"402de0aee7c12f1b4070a0ab2476e1c112fbe62c",
+        "targetcommit": "402d096b39f4f618ad9e6ff2b4fc1b5eb260a2e4",
+        "project":"https://github.com/jasper-software/jasper.git",
+        "write":"Y",
+        "command":"jasper --input input_file --output /dev/null --output-format",
+        "poc":"https://github.com/jasper-software/jasper/files/9177844/input_file.zip"
+    }
+]
